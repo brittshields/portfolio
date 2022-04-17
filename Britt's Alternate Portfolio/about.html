@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Poppins&display=swap');
+		
+		* {
+			box-sizing: border-box;
+		}
+		
+
+		div {
+			border:1px solid black;
+		}
+	
+		h1 {
+			font-size: 2.25em;
+			position: fixed;
+			left: -80px;
+			top: 120px;
+			transform: rotate(-90deg);
+		}
+		
+		body {
+			margin:0;
+			font-family:'Libre Baskerville', serif;
+ 			background-image: url("cat.jpg");
+			//background-position: center;
+			image-repeat: no-repeat;
+			background-size: 100%;
+		}
+		
+		ul{
+			
+		}
+		#wrapper {
+			width:80%;
+			margin:0 auto;
+		}
+		#header {
+			text-align: center;
+			font-family:'Poppins', sans-serif;
+		}
+		#navigation {
+			text-align: center;
+		}
+
+		#navigation a {
+            display:block;
+            width:fit-content;
+			border:2px solid black;
+			padding:10px 20px;
+		}
+
+		#navigation ul {
+			list-style-type: none;
+			padding:0;
+			display:flex;
+            justify-content: center;
+		}
+        #main {
+            display:flex;
+			
+        }
+		
+        #content1 {
+           flex:1;
+           // order:3;
+        }
+        #content2 {
+            flex:3;
+			padding-top: 250px;
+            //order:1;
+        }
+        #content3 {
+            flex:1;
+            //order:2;
+        }
+        
+		.box {
+			padding:0 20px;
+		}
+		
+		.box img {
+			width:100%;
+			height:inherit;
+		}
+
+		a {
+			text-decoration: none;
+			color:black;
+			font-family:'Poppins', sans-serif;
+		}
+
+        
+		@media screen and (max-width:900px){
+            #wrapper {
+                width:100%;
+            }
+            #main {
+                //display: block;
+                flex-direction: column;
+            }
+		}
+	
+
+	</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>BRITT SHIELDS</h1>
+	</div>	
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<div id="main">
+		<div id="content1" class="box">
+		  	<p></p>
+        </div>
+		<div id="content2" class="box">
+			<p>Here is where I will write a blurb about myself. Maybe the Home page is the same as the About page and I only have to build three pages out...?</p>
+		</div>
+		<div id="content3" class="box">
+			<p></p>
+		</div>
+	</div>
+	<div id="footer">&copy;2022 Britt Shields</div>
+</div>
+</body>
+</html>
